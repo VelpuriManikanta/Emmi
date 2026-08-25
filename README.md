@@ -35,10 +35,7 @@ emmi-benchmark-dashboard/
 └── specs/             # Specifications and development guidelines
 ```
 
-## Development Workflow
 
-- **Weekly**: 1 project milestone per week
-- **Daily**: 1 code push per day (minimum)
 
 ## Getting Started
 
