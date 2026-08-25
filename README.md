@@ -1,7 +1,6 @@
 # EMMI Benchmark Monitoring Dashboard
 
 **European Money Markets Institute (EMMI)**  
-Mar 2023 – Jun 2024
 
 ## Project Overview
 
