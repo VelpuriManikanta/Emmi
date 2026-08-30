@@ -49,7 +49,7 @@ class BenchmarkRateSerializer(serializers.ModelSerializer):
             "submitted_by",
             "created_at",
         ]
-        read_only_fields = ["id", "submitted_by", "created_at"]
+        read_only_fields = ["id", "benchmark", "submitted_by", "created_at"]
 
 
 class ValidationRuleSerializer(serializers.ModelSerializer):
