@@ -335,3 +335,196 @@ body {
   color: var(--muted);
   padding: 24px 0;
 }
+
+/* Charts */
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card-highlight {
+  border-color: var(--primary);
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.mono {
+  font-variant-numeric: tabular-nums;
+  font-family: "Consolas", "SF Mono", monospace;
+}
+
+/* Page header with button */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.page-header .page-title {
+  margin-bottom: 0;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 6px;
+}
+
+/* Forms */
+.rate-form .form-row,
+.modal-card .form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.form-group label,
+.modal-card label,
+.rate-form label {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.modal-card label {
+  margin-top: 10px;
+}
+
+.form-group input,
+.form-group select,
+.modal-card input,
+.modal-card select {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modal-card input,
+.modal-card select {
+  width: 100%;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+
+.checkbox-group legend {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin: 6px 14px 6px 0;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  accent-color: var(--primary);
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 32px;
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.modal-card h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.btn-ghost-dark {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost-dark:hover {
+  background: #f4f6f9;
+  opacity: 1;
+}
+
+/* Toasts */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toast {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--white);
+  min-width: 260px;
+  animation: toast-in 0.25s ease;
+}
+
+.toast-success {
+  background: var(--success);
+}
+
+.toast-error {
+  background: var(--danger);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
